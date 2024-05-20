@@ -1,2 +1,3 @@
-# TechBookPdf
-Technology good short free books
+# Welcome to Tech wiki 
+
+[Tech wiki](https://github.com/mnhmilu/TechWiki/wiki)
