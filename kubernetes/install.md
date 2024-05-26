@@ -1,6 +1,8 @@
 # [install in Ubuntu 22.04](https://medium.com/@kvihanga/how-to-set-up-a-kubernetes-cluster-on-ubuntu-22-04-lts-433548d9a7d0) 
 
-## MasterNode  Installation
+poc history command [Ref](https://github.com/mnhmilu/TechWiki/tree/main/kubernetes)
+
+## MasterNode  Installation  
 
 ```
 
