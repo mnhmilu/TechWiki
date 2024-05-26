@@ -1,4 +1,4 @@
-# [install in Ubuntu 22.04]([url](https://medium.com/@kvihanga/how-to-set-up-a-kubernetes-cluster-on-ubuntu-22-04-lts-433548d9a7d0)) 
+# [install in Ubuntu 22.04](https://medium.com/@kvihanga/how-to-set-up-a-kubernetes-cluster-on-ubuntu-22-04-lts-433548d9a7d0) 
 
 ## MasterNode  Installation
 
@@ -155,12 +155,18 @@ spec:
 
 
 ```
+Apply , it will install in worker node to verify execute `describe pod nginx-pod`
 
 ```
 kubectl apply -f Deployment.yaml
 kubectl apply -f Service.yaml
 ```
 
+To expose port from cluster 
 
+
+`sudo ufw allow 8083`
+
+`kubectl port-forward nginx-pod 8083:80`
 
 
