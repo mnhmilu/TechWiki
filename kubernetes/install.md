@@ -109,10 +109,57 @@ fbb-k8s-master     Ready    control-plane   10m     v1.29.0
 fbb-k8s-worker-1   Ready    <none>          2m31s   v1.29.0
 ```
 
+## [Deploy a nging server in new cluster](https://www.geeksforgeeks.org/how-to-deploy-nginx-in-kubernetes/) 
+
+Deployment.yaml
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+
+```
+
+Service.yaml
+
+```
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-service
+spec:
+  type: NodePort
+  selector:
+    app: nginx
+  ports:
+    - port: 80
+      targetPort: 80
 
 
+```
 
-
+```
+kubectl apply -f Deployment.yaml
+kubectl apply -f Service.yaml
+```
 
 
 
