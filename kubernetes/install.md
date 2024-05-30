@@ -99,6 +99,11 @@ kubeadm join 10.10.10.1:6443 --token qyq7z7.5augt56vin856fj \
 
 ```
 
+For later node join use this
+
+`kubeadm token create --print-join-command`
+
+
 Verifying the Cluster Setup
 Ensure your cluster is up and running.
 
