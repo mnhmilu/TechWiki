@@ -121,7 +121,7 @@ fbb-k8s-worker-1   Ready    <none>          2m31s   v1.29.0
 ```
 
 ## Remove worker node 
-
+```
 Follow these steps to remove the worker node from Kubernetes:
 
 List all the nodes from the cluster
@@ -166,6 +166,9 @@ You can optionally reboot the node to ensure that all changes take effect.
 bash
 Copy code
 sudo reboot
+
+
+```
 
 ## [Deploy a nging server in new cluster](https://www.geeksforgeeks.org/how-to-deploy-nginx-in-kubernetes/) 
 
