@@ -12,6 +12,8 @@ sudo apt-get upgrade
 
 Step 2 : Disable Swap
 
+swapon --show // if return output then swap is on , it will cause systemctl status kubelet as 'activiting' state.
+
 sudo swapoff -a
 sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
 
