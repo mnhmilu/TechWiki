@@ -120,6 +120,53 @@ fbb-k8s-master     Ready    control-plane   10m     v1.29.0
 fbb-k8s-worker-1   Ready    <none>          2m31s   v1.29.0
 ```
 
+## Remove worker node 
+
+Follow these steps to remove the worker node from Kubernetes:
+
+List all the nodes from the cluster
+
+kubectl get nodes
+Drain node in preparation for maintenance
+
+kubectl drain <node-name> --ignore-daemonsets
+Delete node by its name
+kubectl delete node <node-name>
+
+if joined earlier then need to clean
+
+
+Stop Kubernetes Services:
+First, stop all Kubernetes-related services running on the node. This includes kubelet, kube-proxy, and any other related services.
+
+bash
+Copy code
+sudo systemctl stop kubelet
+sudo systemctl stop kube-proxy
+Reset Kubernetes Configuration:
+Use the kubeadm reset command to reset the node. This command will revert any changes made to this host by kubeadm init or kubeadm join.
+
+bash
+Copy code
+sudo kubeadm reset
+Remove Kubernetes Binaries:
+Optionally, you can remove Kubernetes binaries and configuration files to ensure a clean state.
+
+bash
+Copy code
+sudo rm -rf /etc/kubernetes/
+sudo rm -rf /var/lib/kubelet/
+sudo rm -rf /var/lib/dockershim/
+sudo rm -rf /var/lib/cni/
+Be cautious when running the rm command, as it will permanently delete files and directories.
+
+Reboot the Node (Optional):
+You can optionally reboot the node to ensure that all changes take effect.
+
+bash
+Copy code
+sudo reboot
+
 ## [Deploy a nging server in new cluster](https://www.geeksforgeeks.org/how-to-deploy-nginx-in-kubernetes/) 
 
 Deployment.yaml
