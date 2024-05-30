@@ -86,6 +86,8 @@ Step 8 : Deploy a Pod Network: Install a pod network so that your nodes can comm
 
 kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
 
+get pods -n kube-system
+
 ```
 
 ## Worker Node Installation
