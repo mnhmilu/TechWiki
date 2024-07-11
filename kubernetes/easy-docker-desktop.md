@@ -55,13 +55,18 @@ Step 6: Access kubernetes Dashboard
 `http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login`
 
 
-Step 7: Install Istio and Kiali
+Step 7: Install Istio and Kiali with Book Info
 
 [Follow here](https://istio.io/latest/docs/setup/getting-started/)
 
 [Consider Platform when install set 8GB ram for Docker Desktop](https://istio.io/latest/docs/setup/platform-setup/)
 
-#Resources 
+
+Step 8: Install Another Sample Application [Follow](https://medium.com/@SabujJanaCodes/running-a-full-stack-app-in-istio-service-mesh-part-1-87b828f4d1cc)
+
+Step 9: Make a Simple of my own Backend and Frontend and Deploy 
+
+# Resources 
 
 [How to Run Kubernetes Locally in Docker Desktop](https://sudipta-deb.in/2023/02/how-to-run-kubernetes-locally-in-docker-desktop.html)
 
