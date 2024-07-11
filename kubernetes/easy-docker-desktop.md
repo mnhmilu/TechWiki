@@ -52,10 +52,10 @@ kubectl proxy
 
 Step 6: Access kubernetes Dashboard 
 
+http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
 
 
-
-Step 7: Install Istio and Kial
+Step 7: Install Istio and Kiali
 
 [Follow here](https://istio.io/latest/docs/setup/getting-started/)
 
