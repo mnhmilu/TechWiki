@@ -48,11 +48,11 @@ kubectl -n kubernetes-dashboard create token admin-user
 
 Step 5: Start Proxy
 
-kubectl proxy
+`kubectl proxy`
 
 Step 6: Access kubernetes Dashboard 
 
-http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login
+`http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/#/login`
 
 
 Step 7: Install Istio and Kiali
