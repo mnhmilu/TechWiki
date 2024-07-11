@@ -59,7 +59,7 @@ Step 7: Install Istio and Kiali
 
 [Follow here](https://istio.io/latest/docs/setup/getting-started/)
 
-
+[Consider Platform when install set 8GB ram for Docker Desktop](https://istio.io/latest/docs/setup/platform-setup/)
 
 #Resources 
 
