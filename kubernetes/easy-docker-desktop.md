@@ -64,7 +64,7 @@ Step 7: Install Istio and Kiali with Book Info
 
 Step 8: Install Another Sample Application [Follow](https://medium.com/@SabujJanaCodes/running-a-full-stack-app-in-istio-service-mesh-part-1-87b828f4d1cc)
 
-Step 9: Make a Simple of my own Backend and Frontend and Deploy 
+Step 9: Make a Simple of my own Backend and Frontend and Deploy [Follow](https://faun.pub/istio-step-by-step-part-03-deploying-an-application-with-istio-in-kubernetes-d2b1de64fb6b)
 
 # Resources 
 
